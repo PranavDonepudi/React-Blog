@@ -21,14 +21,14 @@ admin.initializeApp({
 
 const app = express();
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../build')));
+// Serve static files from frontend build directory
+app.use(express.static(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build')));
 
 const Filepath = require('path');
 
 app.get(/^(?!\/api).+/, (req, res) => {
     res.sendFile(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build', 'index.html'));
 });
-
 
 app.use(async (req, res, next) => {
     const { authtoken } = req.headers;
