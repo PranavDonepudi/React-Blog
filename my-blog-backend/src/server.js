@@ -2,16 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import admin from 'firebase-admin';
 import express from 'express';
-import 'dotenv/config';
 import { db, connectToDb } from './db.js';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import 'dotenv/config';
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Firebase Admin Initialization
 const credentials = JSON.parse(
     fs.readFileSync('./credentials.json')
 );
@@ -21,13 +20,13 @@ admin.initializeApp({
 
 const app = express();
 app.use(express.json());
-// Serve static files from frontend build directory
-app.use(express.static(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build')));
 
-const Filepath = require('path');
+// Static file serving
+app.use(express.static(path.join(__dirname, '../build')));
 
+// Serve index.html for all non-API routes
 app.get(/^(?!\/api).+/, (req, res) => {
-    res.sendFile(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
 app.use(async (req, res, next) => {
