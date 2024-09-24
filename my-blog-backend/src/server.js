@@ -23,7 +23,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../build')));
 
-const path = require('path');
+const Filepath = require('path');
 
 app.get(/^(?!\/api).+/, (req, res) => {
     res.sendFile(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build', 'index.html'));
