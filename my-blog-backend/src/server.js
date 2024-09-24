@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const credentials = JSON.parse(
-    fs.readFileSync('/my-blog-backend/credentials.json')
+    fs.readFileSync('./credentials.json')
 );
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
@@ -23,9 +23,12 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../build')));
 
+const path = require('path');
+
 app.get(/^(?!\/api).+/, (req, res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-})
+    res.sendFile(path.join('/Users/pranavdonepudi/Downloads/React-Blog/my-blog-frontend/build', 'index.html'));
+});
+
 
 app.use(async (req, res, next) => {
     const { authtoken } = req.headers;
