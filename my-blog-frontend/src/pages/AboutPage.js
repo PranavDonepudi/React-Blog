@@ -5,23 +5,30 @@ const AboutPage = () => {
     return (
         <>
             <div className="about-container">
-                <h1 className="about-title">About Me</h1>
-                <p className="about-description">
-                    Earning my Master's degree from Rice University, I honed advanced software engineering skills, delving into machine learning and artificial intelligence.
-                </p>
-                <p className="about-description">
-                    At SBS CORP, my focus lies in leveraging my expertise in JavaScript frameworks and Information and Communications Technology (ICT) to innovate and optimize application deployment.
-                    With a passion for creating impactful user-centric software, I am eager to contribute to projects that challenge and expand my technical progress. Our team at DXC Technology thrived as I immersed myself in web application development, mastering JavaScript, HTML, CSS, and Node.js to deliver robust solutions to a diverse clientele.
-                </p>
-                <p className="about-description">
-                    <strong>Skills and Expertise</strong><br/>
-                    Programming Languages: JavaScript, HTML/CSS, Python, Java, C, C++, Maven<br/>
-                    Tools & Frameworks: Numpy, Pytorch, Django, Git, Jupyter Notebook, Google Colab, React, Node.js<br/>
-                    Database Management: MongoDB<br/>
-                    Proficiency in QA Engineering: Skilled in system validation with a focus on Python-based automation and validation processes<br/>
-                    Cloud Platforms: Google Cloud (experience with SDK and CLI tools)
-                </p>
-
+            <h1 className="about-title">About Me</h1>
+            <p className="about-description">
+                Earning my Master's degree from Rice University, I have honed advanced software engineering skills while delving into machine learning and artificial intelligence.
+            </p>
+            <p className="about-description">
+                At SBS CORP, my focus has been on leveraging my expertise in JavaScript frameworks and Information and Communications Technology (ICT) to innovate and optimize application deployment. 
+                With a passion for creating impactful, user-centric software, I am eager to contribute to projects that challenge and expand my technical progress. 
+                My time at DXC Technology was instrumental in refining my web application development skills, where I mastered JavaScript, HTML, CSS, and Node.js to deliver robust solutions to a diverse clientele.
+            </p>
+            <p className="about-description">
+                <strong>Skills and Expertise</strong><br/>
+                Programming Languages: JavaScript, HTML/CSS, Python, Java, C, C++, Maven<br/>
+                Tools & Frameworks: Numpy, Pytorch, Django, Git, Jupyter Notebook, Google Colab, React, Node.js<br/>
+                Database Management: MongoDB<br/>
+                Proficiency in QA Engineering: Skilled in system validation with a focus on Python-based automation and validation processes<br/>
+                Cloud Platforms: Google Cloud (experience with SDK and CLI tools)
+            </p>
+            {/* Download link for the resume */}
+            <p>
+            <a href="/PRANAV DONEPUDI..pdf" download="Pranav_Donepudi_Resume.pdf">
+                Click here to download my resume
+            </a>
+            </p>
+        
                 <div className="contact-info">
                     <h2>Contact Information</h2>
                     <ul>

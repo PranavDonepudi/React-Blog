@@ -11,11 +11,15 @@ const HomePage = () => (
                 My technical skills encompass a broad range of tools, including Python, JavaScript, React, and Node.js, and I’ve delivered projects in areas like system validation, machine learning, and real-time interactive technologies.
             </p>
             <p className="homepage-description">
-                <strong>Beyond Coding:</strong> <br />
-                When I’m not immersed in software development or exploring the latest advancements in AI, I enjoy pursuing a variety of interests that keep me balanced and inspired. I’m passionate about photography, capturing unique perspectives through the lens, and often enjoy combining it with my love for travel. 
-                Whether it’s hiking in nature or exploring new cities, I’m always looking for new experiences that fuel my creativity.
-                I also enjoy reading about technology trends and how they shape the future, as well as exploring innovations in media platforms and real-time interactions. In my downtime, I like playing strategy-based games, which sharpen my problem-solving skills while offering a fun break from work.
-            </p>
+        <strong>Beyond Coding:</strong> <br />
+
+        When I’m not immersed in software development or exploring the latest advancements in AI, I enjoy spending my time engaging in various activities that keep me balanced and motivated. 
+        I’m passionate about playing tennis, which helps me stay active and sharp, both mentally and physically. 
+        I also have a deep interest in movies, constantly learning more about the art of filmmaking and storytelling. 
+        Traveling is another pursuit I love, as it allows me to explore new places and cultures, fueling my sense of adventure and curiosity. 
+        Additionally, I have a strong inclination towards books and reading, constantly exploring new ideas and gaining knowledge across different subjects.
+        </p>
+
             <div className="contact-info">
                 <h2>Contact Information</h2>
                 <ul>
